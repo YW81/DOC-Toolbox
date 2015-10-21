@@ -76,7 +76,7 @@ function [res y_hat] = get_metrics(pr,gt)
     res.MAE = mean(abs(gt-y_hat));
 
     % root mean square error 
-    res.RMS = mean((gt-y_hat).^2);
+    res.RMS = sqrt(mean((gt-y_hat).^2));
 
     % compute confusion matrix 
     y_hat_ = num2cell( num2str(y_hat) );
