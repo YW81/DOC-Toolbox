@@ -1,4 +1,4 @@
-function [cll, grad, other, node_potn, edge_potn] = objective(obj,y,H,X,O,seq)
+function [cll, grad, other, node_post, edge_post] = objective(obj,y,H,X,O,seq)
 %————————————————————
 % INFO:
 % see ../@MLR/objective.m for description
